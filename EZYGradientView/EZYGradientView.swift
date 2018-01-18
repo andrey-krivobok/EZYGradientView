@@ -153,9 +153,9 @@ open class EZYGradientView: UIView
     if gradientLayer == nil
     {
       gradientLayer = CAGradientLayer()
-      gradientLayer!.frame = self.bounds
       layer.insertSublayer(gradientLayer!, at: 0)
     }
+    gradientLayer!.frame = self.bounds
     self.updateColors()
     self.updatePoints()
     self.updateLocation()
